@@ -1,14 +1,14 @@
 {% extends 'blog/base.html' %}
 {% load crispy_forms_tags %}
 
-{% block title %} Create/Update Post {% endblock title %}
+{% block title %} Create/Update Reference {% endblock title %}
 
 {% block content %}
     <h1>
         {% if 'add' in request.path|slice:'-4:' %}
-            Create Post
+            Create Reference
         {% else %}
-            Update Post
+            Update Reference
         {% endif %}
     </h1>
     <form action="" method="post">

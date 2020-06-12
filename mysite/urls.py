@@ -31,7 +31,9 @@ urlpatterns = [
     path('sitemap.xml', sitemap, {'sitemaps':sitemaps}, name='django.contrib.sitemaps.views'),
     path('account/', include("account.urls")),
     path('api/', include('blog.api.urls', namespace='api')),
+    path('api/', include('reference.api.urls', namespace='api_reference')),
     path('api_auth/', include('rest_framework.urls')),
+    path('references/', include('reference.urls')),
     
 ]
 
